@@ -5,6 +5,7 @@ import Blog from "../../Pages/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
 import LogIn from "../../Pages/LogIn/LogIn";
 import ServiceAndReview from "../../Pages/ServiceAndReview/ServiceAndReview";
+import SignUp from "../../Pages/SignUp/SignUp";
 import ErrorPage from "../../shared/ErrorPage/ErroePage";
 
 
@@ -28,19 +29,18 @@ const router = createBrowserRouter([
             element:<ServiceAndReview></ServiceAndReview>,
             loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`),
         },
-        // {
-        //   path:'/serviceAndReview/:id',
-        //   element:<ServiceAndReview></ServiceAndReview>,
-        //   loader: ({params}) => fetch(`http://localhost:5000/services/${params._id}`)
-        // },
         {
             path:'/blog',
             element:<Blog></Blog>,
         },
         {
             path:'/login',
-            element:<LogIn></LogIn>
+            element:<LogIn></LogIn>,
         },
+        {
+          path:'/signUp',
+          element:<SignUp></SignUp>,
+        }
       ]
     }
   ])
