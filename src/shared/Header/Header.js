@@ -6,6 +6,9 @@ const Header = () => {
 
     const menuItems = <>
         <li className='font-semibold'><Link to={'/'}>Home</Link></li>
+        <li className='font-semibold'><Link to={'/allServices'}>All Services</Link></li>
+        <li className='font-semibold'><Link to={'/blog'}>Blog</Link></li>
+        <li className='font-semibold'><Link to={'/login'}>LogIn</Link></li>
         {/* {
             user?.email ?
                 <>
@@ -21,7 +24,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="navbar h-20 mb-8 pt-8 shadow-sm bg-base-100">
+            <div className="navbar h-20 mb-8 pt-8 bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">

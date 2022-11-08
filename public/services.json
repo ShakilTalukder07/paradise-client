@@ -1,0 +1,152 @@
+[
+    {
+        "service_id": "04",
+        "title": "Flight Reservation Booking",
+        "img": "https://www.airmaxsystem.com/images/airplanenew3.png",
+        "price": "20.00",
+        "description": "Compare 530+ Airlines - All Fares in One Place. Save Time & Money - Lowest Fare Guarantee! Compare All Flights Deals from All Sites in 1 Place & Book Cheap Flight Tickets. Book Now! Offers from 530+ Airlines. Compare All Hotels Deals. Domestic & International.",
+        "facility": [
+            {
+                "name": "Instant Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "service_id": "05",
+        "title": "Tour Visa",
+        "img": "https://www.skylineeducationimmigration.com/wp-content/uploads/2020/11/Tourist-Visa.jpg",
+        "price": "20.00",
+        "description": "Everything you need to know about the digital trends and initiatives that are transforming commerce and uplifting the communities we serve.",
+        "facility": [
+            {
+                "name": "Instant Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "service_id": "01",
+        "title": "Hotel Booking",
+        "img": "https://www.writtenchinese.com/wp-content/uploads/2016/12/Booking-a-Hotel-Room-in-Chinese.jpg",
+        "price": "200.00",
+        "description": "Over 2,563,000 Hotels Worldwide. Book Now, Pay When You Stay. We speak your language. Read Real Guest Reviews. Get Instant Confirmation. Save 10% with Genius. 24/7 Customer Service. Best Price Guarantee. Types: Hotels, Apartments, Villas, Hostels, Resorts.",
+        "facility": [
+            {
+                "name": "Instant Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "service_id": "02",
+        "title": "Delivery Service",
+        "img": "https://www.odtap.com/wp-content/uploads/2018/10/doorstep.jpg",
+        "price": "150.00",
+        "description": "we provide - the best delivery service during your travel time, business parcel delivery, air parcel delivery, logistical support.",
+        "facility": [
+            {
+                "name": "Instant Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "service_id": "03",
+        "title": "Passport Consultancy",
+        "img": "https://www.daily-sun.com/assets/news_images/2016/03/27/BDPassportInside.jpg",
+        "price": "30.00",
+        "description": "Having a Passport can have many benefits. Passport provides an enterprise software platform for cities, transit agencies, universities, and private operators in the parking and transportation industries throughout the entire world.",
+        "facility": [
+            {
+                "name": "Instant Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "service_id": "06",
+        "title": "Outdoor recreation activities",
+        "img": "https://www.zenrooms.com/blog/wp-content/uploads/2021/06/camping-outdoor-recreational-activities-1280x720.jpg",
+        "price": "20.00",
+        "description": "Outdoor recreation or outdoor activity refers to recreation done outside, most commonly in natural settings. The activities that encompass outdoor recreation vary depending on the physical environment they are being carried out in. These activities can include fishing, hunting, backpacking, and horseback riding and and can be completed individually or collectively. Outdoor recreation is a broad concept that encompasses a varying range of activities and landscapes.",
+        "facility": [
+            {
+                "name": "Instant Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    }
+]
