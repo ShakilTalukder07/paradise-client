@@ -34,6 +34,14 @@ const router = createBrowserRouter([
             element:<Blog></Blog>,
         },
         {
+            path:'/myReviews',
+            element:<Blog></Blog>,
+        },
+        {
+            path:'/addService',
+            element:<Blog></Blog>,
+        },
+        {
             path:'/login',
             element:<LogIn></LogIn>,
         },
