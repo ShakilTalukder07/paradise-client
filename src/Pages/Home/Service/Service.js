@@ -1,20 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from './ServiceCard';
+import DotLoader from 'react-spinners/DotLoader';
+import { AuthContext } from '../../../context/AuthProvider';
 
 const Service = () => {
     const [service, setService] = useState([])
-
+    const { loading } = useContext(AuthContext)
+    
     useEffect(() => {
         fetch('http://localhost:5000/limitedServices')
-            .then(res => res.json())
-            .then(data => setService(data))
+        .then(res => res.json())
+        .then(data => setService(data))
     }, [])
+    
+    if (loading) {
+        return <DotLoader color={'#47E0C4'} loading={loading} ></DotLoader>
+    }
+
     return (
         <div className='my-8'>
             <div className='text-center mb-6'>
-                <p className="text-2xl font-bold text-orange-600">Service</p>
-                <h className="text-5xl font-bold">Our Service Area</h>
+                <div className='my-8 text-center mb-6'>
+                    <h className="text-5xl font-bold underline">Our Service Area</h>
+                </div>
                 <p>The Majority Have Suffered Alteration In Some Form, By Injected Humour, Or Randomised <br /> Words Which Don't Look Even Slightly Believable.</p>
             </div>
             <div className=' w-100 '>

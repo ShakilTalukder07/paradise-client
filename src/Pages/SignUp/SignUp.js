@@ -4,15 +4,22 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../context/AuthProvider";
 import useTitle from "../../hooks/useTitle";
+import DotLoader from 'react-spinners/DotLoader';
 
 
 
 const Register = () => {
     useTitle('SignUp')
     const [error, setError] = useState("");
-    const { googleLogin, githubLogin, createUser, updateUserProfile } =
+    const { googleLogin, githubLogin, createUser, updateUserProfile, loading } =
         useContext(AuthContext);
 
+
+    if (loading) {
+        return <DotLoader color={'#47E0C4'} loading={loading} ></DotLoader>
+    }
+
+    
     const handleGoogle = () => {
         setError("");
         googleLogin()

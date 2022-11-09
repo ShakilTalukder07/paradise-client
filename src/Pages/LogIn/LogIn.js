@@ -4,17 +4,24 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../context/AuthProvider";
 import useTitle from "../../hooks/useTitle";
+import DotLoader from 'react-spinners/DotLoader';
+
 
 
 const Login = () => {
     useTitle('Login')
+
     const [error, setError] = useState("");
     const location = useLocation();
     const navigate = useNavigate();
 
     const from = location.state?.from?.pathname || '/';
 
-    const { googleLogin, githubLogin, login } = useContext(AuthContext);
+    const { googleLogin, githubLogin, login, loading } = useContext(AuthContext);
+
+    if (loading) {
+        return <DotLoader color={'#47E0C4'} loading={loading} ></DotLoader>
+    }
 
     const handleGoogle = () => {
         setError("");
