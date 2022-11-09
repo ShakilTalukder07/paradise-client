@@ -32,7 +32,7 @@ const Register = () => {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
-        const photoURL = form.photoURL.value;
+        const img = form.img.value;
         const email = form.email.value;
         const password = form.password.value;
         const confirm = form.confirm.value;
@@ -47,16 +47,16 @@ const Register = () => {
         createUser(email, password)
             .then((result) => {
                 const user = result.user;
-                handleUpdateUserProfile(name, photoURL);
+                handleUpdateUserProfile(name, img);
                 console.log(user);
             })
             .catch((error) => setError(error.message));
         form.reset();
     };
-    const handleUpdateUserProfile = (name, photoURL) => {
+    const handleUpdateUserProfile = (name, img) => {
         const profile = {
             displayName: name,
-            photoURL: photoURL,
+            img: img,
         };
 
         updateUserProfile(profile)
@@ -91,14 +91,14 @@ const Register = () => {
                                 />
                             </div>
                             <div className="space-y-1 text-sm">
-                                <label htmlFor="photoURL" className="block text-gray-300">
-                                    PhotoURL
+                                <label htmlFor="img" className="block text-gray-300">
+                                    img
                                 </label>
                                 <input
                                     type="text"
-                                    name="photoURL"
-                                    id="photoURL"
-                                    placeholder="photoURL"
+                                    name="img"
+                                    id="img"
+                                    placeholder="img"
                                     required
                                     className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-900 text-red-100 focus:border-violet-400"
                                 />
