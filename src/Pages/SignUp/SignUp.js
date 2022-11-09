@@ -3,10 +3,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../context/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 
 
 const Register = () => {
+    useTitle('SignUp')
     const [error, setError] = useState("");
     const { googleLogin, githubLogin, createUser, updateUserProfile } =
         useContext(AuthContext);

@@ -4,8 +4,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 import { AuthContext } from "../../context/AuthProvider";
+import useTitle from '../../hooks/useTitle';
 
 const AddService = () => {
+    useTitle('AddService')
     const { user } = useContext(AuthContext)
 
     const diffToast = () => {
