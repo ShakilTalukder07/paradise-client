@@ -28,7 +28,7 @@ const Review = () => {
             email
         }
 
-        fetch('http://localhost:5000/totalReviews', {
+        fetch('https://paradise-server.vercel.app/totalReviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

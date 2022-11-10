@@ -27,16 +27,16 @@ const router = createBrowserRouter([
       {
         path: '/allServices',
         element: <AllServices></AllServices>,
-        loader: () => fetch("http://localhost:5000/services")
+        loader: () => fetch("https://paradise-server.vercel.app/services")
       },
       {
         path: '/allServices/:id',
         element: <PrivateRoutes><ServiceAndReview></ServiceAndReview></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+        loader: ({ params }) => fetch(`https://paradise-server.vercel.app/services/${params.id}`),
       },
       {
         path: '/writeReview',
-        element:<Review></Review>
+        element: <Review></Review>
       },
       {
         path: '/blog',

@@ -7,13 +7,13 @@ import { AuthContext } from '../../../context/AuthProvider';
 const Service = () => {
     const [service, setService] = useState([])
     const { loading } = useContext(AuthContext)
-    
+
     useEffect(() => {
-        fetch('http://localhost:5000/limitedServices')
-        .then(res => res.json())
-        .then(data => setService(data))
+        fetch('https://paradise-server.vercel.app/limitedServices')
+            .then(res => res.json())
+            .then(data => setService(data))
     }, [])
-    
+
     if (loading) {
         return <DotLoader color={'#47E0C4'} loading={loading} ></DotLoader>
     }

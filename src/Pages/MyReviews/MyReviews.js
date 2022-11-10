@@ -7,11 +7,11 @@ const MyReviews = () => {
     useTitle('MyReviews')
 
     const { user } = useContext(AuthContext)
-    const [ myallreviews, setMyallreviews ] = useState([])
+    const [myallreviews, setMyallreviews] = useState([])
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/totalReviews?email=${user?.email}`)
+        fetch(`https://paradise-server.vercel.app/totalReviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setMyallreviews(data))
     }, [user?.email])
@@ -19,13 +19,13 @@ const MyReviews = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ? You want to delete this review.');
         if (proceed) {
-            fetch(`http://localhost:5000/totalReviews/${id}`, {
+            fetch(`https://paradise-server.vercel.app/totalReviews/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
-                    if(data.deletedCount > 0){
+                    if (data.deletedCount > 0) {
                         alert('Deleted Successfully');
                         const remaining = myallreviews.filter(review => review._id !== id);
                         setMyallreviews(remaining);
@@ -42,7 +42,7 @@ const MyReviews = () => {
                     myallreviews.map(reviews => <MyReviewsRow
                         key={reviews._id}
                         reviews={reviews}
-                        handleDelete = {handleDelete}
+                        handleDelete={handleDelete}
                     ></MyReviewsRow>)
                 }
             </div>
