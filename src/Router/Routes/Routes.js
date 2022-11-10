@@ -3,7 +3,7 @@ import Main from "../../Layouts/Main";
 import ShowServiceAndReview from "../../Layouts/ShowServiceAndReview";
 import AddService from "../../Pages/AddService/AddService";
 import AllServices from "../../Pages/AllServices/AllServices";
-import Review from "../../Pages/AllServices/Review";
+import Review from "../../Pages/ServiceAndReview/Review";
 import Blog from "../../Pages/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
 import LogIn from "../../Pages/LogIn/LogIn";
@@ -35,6 +35,10 @@ const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
       },
       {
+        path: '/writeReview',
+        element:<Review></Review>
+      },
+      {
         path: '/blog',
         element: <Blog></Blog>,
       },
@@ -55,24 +59,7 @@ const router = createBrowserRouter([
         element: <SignUp></SignUp>,
       }
     ]
-  },
-  // {
-  //   path: '/allServices/:id',
-  //   element: <ShowServiceAndReview></ShowServiceAndReview>,
-  //   errorElement: <ErrorPage></ErrorPage>,
-  //   children: [
-  //     {
-
-  //       path: '/allServices/:id',
-  //       element: <PrivateRoutes><ServiceAndReview></ServiceAndReview></PrivateRoutes>,
-  //       loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
-  //     },
-  //     {
-  //       path: '/reviews',
-  //       element:<Review></Review>
-  //     }
-  //   ]
-  // }
+  }
 ])
 
 export default router;
