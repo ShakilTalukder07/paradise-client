@@ -3,7 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 
 const ServiceAndReview = () => {
     const serviceDetails = useLoaderData()
-    console.log(serviceDetails);
+    // console.log(serviceDetails);
     const { title, img, description, price } = serviceDetails
 
     return (

@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
 import { AuthContext } from "../../context/AuthProvider";
 import useTitle from '../../hooks/useTitle';
 
@@ -25,7 +23,6 @@ const AddService = () => {
         console.log(img, title, price, email, description);
 
         const totalServices = {
-            // service: _id,
             img,
             serviceName: title,
             price,
