@@ -50,7 +50,7 @@ const AddService = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+                <div className='grid mx-96 my-12 shadow-xl p-14 gap-4'>
 
                     <input htmlFor="img" type="text" name="img" id="img" placeholder="photoURL" className="w-full px-4 py-3 rounded-md bg-gray-900 text-red-100 " required />
 
@@ -60,10 +60,11 @@ const AddService = () => {
 
                     <input name='email' type="text" placeholder="Your Email" defaultValue={user?.email} className="input input-bordered w-full  bg-gray-900 text-red-100" readOnly />
 
-                </div>
-                <textarea name='description' type="text" className="textarea textarea-bordered h-40 w-full my-6  bg-gray-900 text-red-100 " placeholder="Description" required></textarea>
-                <div className='flex justify-center items-center'>
-                    <input onClick={diffToast} className='btn btn-wide inline-flex items-center my-6' type="submit" value="Add to service" />
+
+                    <textarea name='description' type="text" className="textarea textarea-bordered h-40 w-full my-6  bg-gray-900 text-red-100 " placeholder="Description" required></textarea>
+                    <div className='flex justify-center items-center'>
+                        <input onClick={diffToast} className='btn btn-wide inline-flex items-center my-6' type="submit" value="Add to service" />
+                    </div>
                 </div>
             </form>
             <ToastContainer />

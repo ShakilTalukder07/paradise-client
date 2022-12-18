@@ -22,7 +22,7 @@ const Service = () => {
         <div className='my-8'>
             <div className='text-center mb-6'>
                 <div className='my-8 text-center mb-6'>
-                    <h className="text-5xl font-bold underline">Our Service Area</h>
+                    <h className="text-5xl font-bold">Our Service Area</h>
                 </div>
                 <p>The Majority Have Suffered Alteration In Some Form, By Injected Humour, Or Randomised <br /> Words Which Don't Look Even Slightly Believable.</p>
             </div>

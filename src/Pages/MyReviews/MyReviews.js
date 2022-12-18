@@ -7,41 +7,44 @@ const MyReviews = () => {
     useTitle('MyReviews')
 
     const { user } = useContext(AuthContext)
-    const [ myallreviews, setMyallreviews ] = useState([])
-
+    const [myAllReviews, setMyAllReviews] = useState([])
 
     useEffect(() => {
         fetch(`https://paradise-server.vercel.app/totalReviews?email=${user?.email}`)
             .then(res => res.json())
-            .then(data => setMyallreviews(data))
+            .then(data => setMyAllReviews(data))
     }, [user?.email])
 
-    const handleDelete = id => {
-        const proceed = window.confirm('Are you sure, You want to delete this review?');
-        if (proceed) {
-            fetch(`https://paradise-server.vercel.app/totalReviews/${id}`,{
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    if (data.deletedCount > 0) {
-                        alert('Deleted Successfully');
-                        const remaining = myallreviews.filter(review => review._id !== id);
-                        setMyallreviews(remaining);
-                    }
-                })
-        }
-    }
+    // const handleDelete = id => {
+    //     console.log(id);
+    //     const proceed = window.confirm('Are you sure, You want to delete this review?');
+    //     if (proceed) {
+    //         fetch(`http://localhost:5000/totalReviews/${id}`, {
+    //             method: 'DELETE'
+    //         })
+    //             .then(res => res.json())
+    //             .then(data => {
+    //                 console.log(data);
+    //                 if (data.deletedCount > 0) {
+    //                     alert('deleted successfully')
+    //                     const remaining = myAllReviews.filter(review => review._id !== id);
+    //                     setMyAllReviews(remaining)
+    //                 }
+    //             })
+    //     }
+    // }
 
     return (
         <div>
-            <h1 className='mx-20 text-3xl font-bold'> You have: {myallreviews.length} reviews </h1>
+            <h1 className='mx-20 text-3xl font-bold'> You have: {myAllReviews.length} reviews </h1>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3' w-full">
                 {
-                    myallreviews.map(reviews => <MyReviewsRow
+                    myAllReviews.map(reviews => <MyReviewsRow
                         key={reviews._id}
                         reviews={reviews}
-                        handleDelete={handleDelete}
+                        myAllReviews={myAllReviews}
+                        setMyAllReviews={setMyAllReviews}
+                        // handleDelete={handleDelete}
                     ></MyReviewsRow>)
                 }
             </div>

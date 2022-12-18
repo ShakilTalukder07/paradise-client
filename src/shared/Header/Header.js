@@ -15,7 +15,7 @@ const Header = () => {
     }
 
     const menuItems = <>
-        <li className='font-semibold'><Link to={'/'}>Home</Link></li>
+        {/* <li className='font-semibold'><Link to={'/'}>Home</Link></li> */}
         <li className='font-semibold'><Link to={'/allServices'}>All Services</Link></li>
         <li className='font-semibold'><Link to={'/blog'}>Blog</Link></li>
         {
@@ -34,7 +34,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="navbar h-20 mb-8 pt-8 bg-base-100">
+            <div className="navbar h-12 mb-4 pt-4 bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,7 +45,8 @@ const Header = () => {
                         </ul>
                     </div>
                     <Link to={'/'} className="btn btn-ghost normal-case text-xl">
-                        <img className='h-14 w-14' src={logo} alt="" />
+                        <p className='text-2xl font-bold'>PARADISE</p>
+                        {/* <img className='h-14 w-14' src={logo} alt="" /> */}
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
